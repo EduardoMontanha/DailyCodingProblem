@@ -11,7 +11,7 @@ form.onsubmit = event => {
     let list = listInput.value.replace(/\s+/gi, "").split(",");
     let number = parseInt(numInput.value);
 
-    //Transform text on number
+    //Transform text to number
     list = list.map(num => parseInt(num));
 
     for(let i = 0; i < list.length; i++) {
