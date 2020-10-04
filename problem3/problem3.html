@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Eduardo Montanha">
+
+        <link rel="stylesheet" href="../style.css">
+
+        <style>
+            
+        </style>
+
+        <title>Problem #3 - Daily Coding Problem</title>
+    </head>
+
+    <body>
+        <a href="../index.html">Return</a>
+
+        <h1>Problem #3</h1>
+
+        <p>
+            This problem was asked by Google.<br>
+            <br>
+            Given the root to a binary tree, implement <code>serialize(root)</code>,
+            which serializes the tree into a string, and <code>deserialize(s)</code>,
+            which deserializes the string back into the tree.<br>
+            <br>
+            For example, given the following Node class<br>
+            <br>
+            <code>
+                class Node:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, val, left=None, right=None):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.val = val<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.left = left<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.right = right
+            </code>
+            <br><br>
+            The following test should pass:<br>
+            <br>
+            <code>
+                node = Node('root', Node('left', Node('left.left')), Node('right'))<br>
+                assert deserialize(serialize(node)).left.left.val == 'left.left'
+            </code>
+        </p>
+
+        <hr>
+
+        
+        
+        <script src="problem3.js"></script>
+    </body>
+</html>
