@@ -6,6 +6,9 @@ const outputInput = document.getElementById("output");
 form.onsubmit = event => {
     event.preventDefault();
 
+    //Clear previous results
+    outputInput.value = "";
+
     //Get values
     let list = listInput.value.replace(/\s+/gi, "").split(",");
 
