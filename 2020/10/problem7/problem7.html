@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eduardo Montanha">
+
+        <link rel="stylesheet" href="../../../css/reset.css">
+        <link rel="stylesheet" href="../../../assets/fontawesome/css/all.css">
+        <link rel="stylesheet" href="../../../css/problems.css">
+
+        <title>Problem #7 - Daily Coding Problem</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="return">
+                <a href="../../../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+            
+            <section class="problem">
+                <h1>Problem #7</h1>
+
+                <p>This problem was asked by <strong>Facebook</strong>.</p>
+                <p>
+                    Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count
+                    the number of ways it can be decoded.
+                </p>
+                <p>
+                    For example, the message '111' would give 3, since it could be decoded as
+                    'aaa', 'ka', and 'ak'.
+                </p>
+                <p>
+                    You can assume that the messages are decodable. For example, '001' is not
+                    allowed.
+                </p>
+            </section>
+        </header>
+
+        <main>
+            <section class="entry">
+                <h2>Entry</h2>
+
+                <form id="form">
+                    <label for="message">Encrypted message</label>
+                    <textarea id="message" placeholder="No letters allowed"></textarea>
+    
+                    <button type="submit">Decode</button>
+                </form>
+            </section>
+
+            <section class="outputs">
+                <h2>Output</h2>
+
+                <form>
+                    <label for="output"># ways of decoding</label>
+                    <input id="output" type="number" disabled>
+                </form>
+            </section>
+        </main>
+
+        <script src="problem7.js"></script>
+    </body>
+</html>
