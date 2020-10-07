@@ -6,56 +6,51 @@
         <meta name="author" content="Eduardo Montanha">
 
         <link rel="stylesheet" href="../../../css/reset.css">
+        <link rel="stylesheet" href="../../../assets/fontawesome/css/all.css">
         <link rel="stylesheet" href="../../../css/problems.css">
-
-        <style>
-            form {
-                margin-bottom: 1rem;
-            }
-
-            label, input {
-                display: block;
-            }
-
-            button {
-                margin: 1rem 0;
-            }
-        </style>
 
         <title>Problem #1 - Daily Coding Problem</title>
     </head>
 
     <body>
-        <a href="../../../index.html">Return</a>
+        <header>
+            <div class="return">
+                <a href="../../../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+            
+            <section class="problem">
+                <h1>Problem #1</h1>
 
-        <h1>Problem #1</h1>
+                <p>This problem was recently asked by <strong>Google</strong>.</p>
+                <p>
+                    Given a list of numbers and a number <code>k</code>, return whether
+                    any two numbers from the list add up to <code>k</code>.
+                </p>
+                <p>
+                    For example, given <code>[10, 15, 3, 7]</code> and <code>k</code> of
+                    <code>17</code>, return true since <code>10 + 7</code> is <code>17</code>.
+                </p>
+                <p>Bonus: Can you do this in one pass?</p>
+            </section>
+        </header>
 
-        <p>
-            This problem was recently asked by Google.<br>
-            <br>
-            Given a list of numbers and a number <code>k</code>, return whether
-            any two numbers from the list add up to <code>k</code>.<br>
-            <br>
-            For example, given <code>[10, 15, 3, 7]</code> and <code>k</code> of
-            <code>17</code>, return true since <code>10 + 7</code> is <code>17</code>.<br>
-            <br>
-            Bonus: Can you do this in one pass?
-        </p>
-
-        <hr>
-
-        <form id="form">
-            <label for="list">List of numbers</label>
-            <input id="list" type="text">
-
-            <label for="num">Number</label>
-            <input id="num" type="number">
-
-            <button type="submit">Check numbers</button>
-        </form>
-
-        <label>Output</label>
-        <input id="output" type="text" disabled>
+        <main class="solution">
+            <form id="form">
+                <label for="list">List of numbers</label>
+                <input id="list" type="text">
+    
+                <label for="num">Number</label>
+                <input id="num" type="number">
+    
+                <button type="submit">Check numbers</button>
+            </form>
+    
+            <label>Output</label>
+            <input id="output" type="text" disabled>
+        </main>
         
         <script src="problem1.js"></script>
     </body>

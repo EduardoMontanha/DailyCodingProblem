@@ -6,56 +6,51 @@
         <meta name="author" content="Eduardo Montanha">
 
         <link rel="stylesheet" href="../../../css/reset.css">
+        <link rel="stylesheet" href="../../../assets/fontawesome/css/all.css">
         <link rel="stylesheet" href="../../../css/problems.css">
-
-        <style>
-            form {
-                margin-bottom: 1rem;
-            }
-
-            label, input {
-                display: block;
-            }
-
-            button {
-                margin: 1rem 0;
-            }
-        </style>
 
         <title>Problem #2 - Daily Coding Problem</title>
     </head>
 
     <body>
-        <a href="../../../index.html">Return</a>
+        <header>
+            <div class="return">
+                <a href="../../../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+            
+            <section class="problem">
+                <h1>Problem #2</h1>
 
-        <h1>Problem #2</h1>
+                <p>This problem was asked by <strong>Uber</strong>.</p>
+                <p>
+                    Given an array of integers, return a new array such that each element at
+                    index <code>i</code> of the new array is the product of all the numbers
+                    in the original array except the one at <code>i</code>.
+                </p>
+                <p>
+                    For example, if our input was <code>[1, 2, 3, 4, 5]</code>, the expected
+                    output would be <code>[120, 60, 40, 30, 24]</code>. If our input
+                    was <code>[3, 2, 1]</code>, the expected output would be <code>[2, 3, 6]</code>.
+                </p>
+                <p>Follow-up: what if you can't use division?</p>
+            </section>
+        </header>
 
-        <p>
-            This problem was asked by Uber.<br>
-            <br>
-            Given an array of integers, return a new array such that each element at
-            index <code>i</code> of the new array is the product of all the numbers
-            in the original array except the one at <code>i</code>.<br>
-            <br>
-            For example, if our input was <code>[1, 2, 3, 4, 5]</code>, the expected
-            output would be <code>[120, 60, 40, 30, 24]</code>. If our input
-            was <code>[3, 2, 1]</code>, the expected output would be <code>[2, 3, 6]</code>.<br>
-            <br>
-            Follow-up: what if you can't use division?
-        </p>
+        <main class="solution">
+            <form id="form">
+                <label for="list">List of numbers</label>
+                <input id="list" type="text">
+    
+                <button type="submit">Check numbers</button>
+            </form>
+    
+            <label>Output</label>
+            <input id="output" type="text" disabled>
+        </main>
 
-        <hr>
-
-        <form id="form">
-            <label for="list">List of numbers</label>
-            <input id="list" type="text">
-
-            <button type="submit">Check numbers</button>
-        </form>
-
-        <label>Output</label>
-        <input id="output" type="text" disabled>
-        
         <script src="problem2.js"></script>
     </body>
 </html>
