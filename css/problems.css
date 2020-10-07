@@ -1,0 +1,13 @@
+:root {
+    --color-1: #2AB380;
+    --color-2: #CDCDCD;
+    --color-3: #FFFFFF;
+    --color-4: #000000;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    background-color: var(--color-2);
+    font-family: monospace;
+}
