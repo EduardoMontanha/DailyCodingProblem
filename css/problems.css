@@ -82,3 +82,77 @@ header {
     font-size: 1rem;
     line-height: 1.4rem;
 }
+
+
+/* ============================= */
+/* Entries */
+/* ============================= */
+main {
+    padding: 3rem 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.entry,
+.outputs {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.outputs {
+    margin-top: 3rem;
+}
+
+form {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-2);
+    border-radius: 10px;
+    background-color: var(--color-3);
+}
+
+label, input,
+textarea, button {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: 1px solid var(--color-2);
+    border-radius: 5px;
+}
+
+input:disabled, textarea:disabled {
+    background-color: var(--color-2);
+}
+
+input + *, textarea + * {
+    margin-top: 2rem;
+}
+
+textarea {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
