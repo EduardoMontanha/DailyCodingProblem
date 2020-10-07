@@ -70,7 +70,11 @@ header {
 .problem .code-block {
     display: block;
     padding: 0.5rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
+}
+
+.problem .code-block + * {
+    margin-top: 1rem;
 }
 
 .problem .code-block pre {
