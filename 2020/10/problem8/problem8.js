@@ -34,6 +34,7 @@ function checkChildren(node) {
         if (isUnival) {
             univalTreeCount++;
         }
+        
     } else {
         univalTreeCount++;
     }
