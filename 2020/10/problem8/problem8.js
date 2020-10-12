@@ -28,11 +28,7 @@ function checkChildren(node) {
                 isUnival = false;
             }
 
-            if (child.children.length) {
-                checkChildren(child);
-            } else {
-                univalTreeCount++;
-            }
+            checkChildren(child);
         }
 
         if (isUnival) {
