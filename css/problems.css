@@ -59,6 +59,12 @@ header {
     margin-top: 1rem;
 }
 
+.problem ul {
+    padding: 0 1rem;
+    margin: 1rem 0;
+    list-style: disc outside;
+}
+
 .problem code {
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
