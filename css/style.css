@@ -85,6 +85,7 @@ main {
 
 .card-body ol {
     list-style: decimal inside;
+    list-style-type: decimal-leading-zero;
 }
 
 .card-body li + li {
