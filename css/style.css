@@ -58,9 +58,15 @@ main {
     height: 400px;
     padding-bottom: 1rem;
     border-radius: 10px;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 0;
     background-color: var(--color-3);
     overflow: hidden;
+}
+
+@media (min-width: 850px) {
+    .card + .card {
+        margin: 0 0 1rem 1rem;
+    }
 }
 
 .card-header {
