@@ -65,6 +65,10 @@ header {
     list-style: disc outside;
 }
 
+.problem ul li {
+    line-height: 1.5em;
+}
+
 .problem code {
     padding: 0.2rem 0.4rem;
     border-radius: 5px;
