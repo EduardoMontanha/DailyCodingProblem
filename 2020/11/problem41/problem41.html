@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eduardo Montanha">
+
+        <link rel="stylesheet" href="../../../css/reset.css">
+        <link rel="stylesheet" href="../../../assets/fontawesome/css/all.css">
+        <link rel="stylesheet" href="../../../css/problems.css">
+        
+        <title>Problem #41 - Daily Coding Problem</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="return">
+                <a href="../../../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+            
+            <section class="problem">
+                <h1>Problem #41</h1>
+
+                <p>This problem was asked by <strong>Facebook</strong>.</p>
+                <p>
+                    Given an unordered list of flights taken by someone, each represented as
+                    (origin, destination) pairs, and a starting airport, compute the person's
+                    itinerary. If no such itinerary exists, return null. If there are multiple
+                    possible itineraries, return the lexicographically smallest one. All flights
+                    must be used in the itinerary.
+                </p>
+                <p>
+                    For example, given the list of flights <code>[('SFO', 'HKO'), ('YYZ', 'SFO'),
+                    ('YUL', 'YYZ'), ('HKO', 'ORD')]</code> and starting airport <code>'YUL'</code>,
+                    you should return the list <code>['YUL', 'YYZ', 'SFO', 'HKO', 'ORD']</code>.
+                </p>
+                <p>
+                    Given the list of flights <code>[('SFO', 'COM'), ('COM', 'YYZ')]</code> and
+                    starting airport <code>'COM'</code>, you should return null.
+                </p>
+                <p>
+                    Given the list of flights <code>[('A', 'B'), ('A', 'C'), ('B', 'C'),
+                    ('C', 'A')]</code> and starting airport <code>'A'</code>, you should return the
+                    list <code>['A', 'B', 'C', 'A', 'C']</code> even though <code>['A', 'C', 'A', 'B',
+                    'C']</code> is also a valid itinerary. However, the first one is lexicographically
+                    smaller.
+                </p>
+            </section>
+        </header>
+
+        <main></main>
+
+        <script src="problem41.js"></script>
+    </body>
+</html>
