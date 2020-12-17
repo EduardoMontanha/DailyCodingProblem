@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Eduardo Montanha">
+
+        <link rel="stylesheet" href="../../../css/reset.css">
+        <link rel="stylesheet" href="../../../assets/fontawesome/css/all.css">
+        <link rel="stylesheet" href="../../../css/problems.css">
+
+        <title>Problem #72 - Daily Coding Problem</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="return">
+                <a href="../../../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Return
+                </a>
+            </div>
+            
+            <section class="problem">
+                <h1>Problem #72</h1>
+
+                <p>This problem was asked by <strong>Google</strong>.</p>
+                <p>
+                    In a directed graph, each node is assigned an uppercase letter. We define a
+                    path's value as the number of most frequently-occurring letter along that
+                    path. For example, if a path in the graph goes through <code>ABACA</code>,
+                    the value of the path is <code>3</code>, since there are 3 occurrences of
+                    <code>A</code> on the path.
+                </p>
+                <p>
+                    Given a graph with <code>n</code> nodes and <code>m</code> directed edges,
+                    return the largest value path of the graph. If the largest value is infinite,
+                    then return <code>null</code>.
+                </p>
+                <p>
+                    The graph is represented with a string and an edge list. The <code>i</code>-th
+                    character represents the uppercase letter of the <code>i</code>-th node. Each
+                    tuple in the edge list <code>(i, j)</code> means there is a directed edge from
+                    the <code>i</code>-th node to the <code>j</code>-th node. Self-edges are
+                    possible, as well as multi-edges.
+                </p>
+                <p>
+                    For example, the following input graph:
+                </p>
+
+                <code class="code-block">
+                    <pre>
+                        ABACA</pre>
+                </code>
+
+                <code class="code-block">
+                    <pre>
+                        [
+                            (0, 1),
+                            (0, 2),
+                            (2, 3),
+                            (3, 4)
+                        ]</pre>
+                </code>
+
+                <p>
+                    Would have maximum value 3 using the path of vertices <code>[0, 2, 3, 4]</code>,
+                    <code>(A, A, C, A)</code>.
+                </p>
+                <p>
+                    The following input graph:
+                </p>
+
+                <code class="code-block">
+                    <pre>
+                        A</pre>
+                </code>
+
+                <code class="code-block">
+                    <pre>
+                        [(0, 0)]</pre>
+                </code>
+
+                <p>
+                    Should return <code>null</code>, since we have an infinite loop.
+                </p>
+            </section>
+        </header>
+
+        <main></main>
+        
+        <script src="problem72.js"></script>
+    </body>
+</html>
