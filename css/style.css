@@ -7,8 +7,6 @@
     --color-6: #c00000;
 }
 
-
-
 body {
     background-color: var(--color-1);
 }
@@ -54,6 +52,28 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.years {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.years li + li {
+    margin-top: 1rem;
+}
+
+.years li a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
 .card {
@@ -66,12 +86,6 @@ main {
     background-color: var(--color-3);
     overflow: hidden;
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
-}
-
-@media (min-width: 850px) {
-    .card + .card {
-        margin: 0 0 1rem 2rem;
-    }
 }
 
 .card-header {
