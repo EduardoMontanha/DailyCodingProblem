@@ -1,0 +1,44 @@
+:root {
+    --dark-grey: #1f1f1f;
+    --grey: #414141;
+    --light-grey: #4e4e4e;
+    --white: #FFFFFF;
+    --green: #269c71;
+    --red: #c00000;
+    --font-title: serif;
+    --font-content: Arial, Helvetica, sans-serif;
+    --font-code: monospace;
+    --background-color: var(--white);
+    --header-color: var(--green);
+    --font-color: var(--light-grey);
+}
+
+.theme-dark {
+    --background-color: var(--dark-grey);
+    --header-color: var(--grey);
+    --font-color: var(--white);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-content);
+    color: --var(--font-color);
+}
+
+
+header {
+    background-color: var(--header-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+code {
+    font-family: var(--font-code);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
