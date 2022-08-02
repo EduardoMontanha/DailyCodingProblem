@@ -1,0 +1,23 @@
+.home {
+    padding: 4rem 2rem;
+
+    ul {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    li + li {
+        margin-top: 1.5rem;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        background-color: var(--header-color);
+        text-align: center;
+        font-size: 2rem;
+        color: var(--white);
+    }
+}
