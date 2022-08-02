@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 
 
 const Problem1 = () => {
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <div className="problem-wrap">
