@@ -1,0 +1,103 @@
+.theme-dark .year {
+
+    .card {
+        background-color: var(--light-grey);
+
+        .card-body {
+            li a {
+                background-color: var(--grey);
+            }
+        }
+    }
+}
+
+.year {
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .not-found {
+        font-size: 2rem;
+        color: var(--red);
+    }
+
+    .months {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        padding-bottom: 1rem;
+        border-radius: 10px;
+        background-color: var(--white);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        background-color: var(--extra-light-grey);
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            margin-bottom: 1rem;
+            background-color: var(--header-color);
+            color: var(--white);
+
+            h2, h3 {
+                font-size: 1.4rem;
+                font-family: var(--font-content);
+            }
+        }
+
+        .card-body {
+            height: 314px;
+            padding: 0 1rem;
+            overflow: auto;
+
+            ol {
+                list-style-type: decimal-leading-zero;
+                list-style-position: inside;
+            }
+
+            li {
+
+                & + li {
+                    margin-top: 0.5rem;
+                }
+
+                &.solved a,
+                &.incompatible a {
+                    color: var(--white);
+                }
+
+                &.solved a {
+                    background-color: var(--green);
+                }
+
+                &.incompatible a {
+                    background-color: var(--red);
+                }
+
+                a {
+                    display: inline-block;
+                    width: 90%;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    margin-left: 0.5rem;
+                    border: 1px solid var(--grey);
+                    background-color: var(--extra-light-grey);
+                }
+            }
+        }
+    }
+}
