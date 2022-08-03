@@ -12,7 +12,13 @@ const Problem = () => {
             <Return />
 
             <main className="problem">
-                {problem}
+                {!!problem ?
+                    problem
+                    :
+                    <section>
+                        Problema não encontrado
+                    </section>
+                }
             </main>
         </>
     );
