@@ -2,6 +2,7 @@
     --dark-grey: #1f1f1f;
     --grey: #414141;
     --light-grey: #4e4e4e;
+    --extra-light-grey: #f3f3f3;
     --white: #FFFFFF;
     --green: #269c71;
     --red: #c00000;
@@ -88,5 +89,32 @@ a {
 
     span {
         font-size: 1.5rem;
+    }
+}
+
+
+/* ============================================ */
+/* Footer */
+/* ============================================ */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0rem 2rem;
+    background-color: var(--header-color);
+
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
     }
 }
