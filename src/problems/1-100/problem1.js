@@ -1,11 +1,9 @@
-import { useEffect } from "react";
+import { useState } from "react";
 
 
 const Problem1 = () => {
 
-    useEffect(() => {
-
-    }, []);
+    const [input1, setInput1] = useState("");
 
     return (
         <div className="problem-wrap">
@@ -18,13 +16,15 @@ const Problem1 = () => {
                     any two numbers from the list add up to <code>k</code>.
                 </p>
                 <p>
-                    For example, given <code>[10, 15, 3, 7]</code> and <code>k</code> of
+                    For example, given <code>[10, 15, 3, 7]</code> and <code>k</code> of&nbsp;
                     <code>17</code>, return true since <code>10 + 7</code> is <code>17</code>.
                 </p>
                 <p>Bonus: Can you do this in one pass?</p>
             </section>
 
-            <section className="problem-input-output"></section>
+            <hr />
+
+            <section className="problem-solution"></section>
         </div>
     );
 }
