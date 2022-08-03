@@ -13,7 +13,7 @@ const useGetProblem = (id) => {
         ProblemComponent = Problems200[intId];
     }
 
-    return <ProblemComponent />;
+    return !!ProblemComponent ? <ProblemComponent /> : undefined;
 }
 
 export default useGetProblem;
