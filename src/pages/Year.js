@@ -44,7 +44,7 @@ const Year = () => {
                             return (
                                 <div className="card" key={key}>
                                     <div className="card-header">
-                                        <h2>{month}, {year}</h2>
+                                        <h2>{month}</h2>
                                         <h3>{amountSolved}/{monthData.length}</h3>
                                     </div>
 
