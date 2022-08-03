@@ -24,7 +24,7 @@ const Year = () => {
         <>
             <Return />
 
-            <main>
+            <main className="year">
                 <h1>{year}</h1>
 
                 <section className="months">
@@ -52,7 +52,7 @@ const Year = () => {
                                         <ol reversed>
                                             {monthData.slice(0).reverse().map((problem, problemKey) => {
                                                 return (
-                                                    <li key={problemKey}>
+                                                    <li key={problemKey} className={problem.solved ? "solved" : problem.canBeSolved ? "" : "incompatible"}>
                                                         <Link to={`/problem/${problem.id}`}>
                                                             Problem #{problem.id} - {problem.askedBy} - {problem.difficulty}
                                                         </Link>
@@ -65,7 +65,9 @@ const Year = () => {
                             );
                         })
                         :
-                        <p>Nada</p>
+                        <section className="not-found">
+                            <h2>Nothing Found!</h2>
+                        </section>
                     }
                 </section>
             </main>
