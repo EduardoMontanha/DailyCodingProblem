@@ -1,3 +1,54 @@
-.problem-wrap {
-    
+.theme-dark .problem {
+    --title-color: var(--white);
+}
+
+.problem {
+    --title-color: var(--green);
+
+    .problem-header {
+        margin-bottom: 3rem;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        color: var(--title-color);
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    p,
+    pre {
+        line-height: 1.5rem;
+    }
+
+    p + p,
+    .code-block,
+    .code-block + * {
+        margin-top: 1rem;
+    }
+
+    code {
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        background-color: var(--green);
+        color: var(--white);
+    }
+
+    .code-block {
+        display: block;
+        padding: 0.5rem;
+
+        pre {
+            margin-left: -250px;
+            font-size: 1rem;
+        }
+    }
+
+    .problem-solution {
+        margin-top: 3rem;
+    }
 }
