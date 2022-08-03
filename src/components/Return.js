@@ -7,7 +7,7 @@ const Return = () => {
     return (
         <header className="return">
             <button onClick={() => navigate(-1)}>
-                Return
+                <span>&#8678;</span> Return
             </button>
         </header>
     );
